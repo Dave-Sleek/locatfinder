@@ -34,7 +34,7 @@ await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${lat}+${long}&key=6
         <li><span>District:</span> ${locationDetails.state_district}</li>
         <li><span>Local Government:</span> ${locationDetails.county}</li>
         <li><span>Village:</span> ${locationDetails.village}</li>
-        <li><span>See Wetin U Fit Send Letter (Postal Code):</span> ${locationDetails.postcode}</li>
+        <li><span>Postal Code:</span> ${locationDetails.postcode}</li>
     </ul>
     <p>Na Here I Dey Now</p>
     </div>`;
