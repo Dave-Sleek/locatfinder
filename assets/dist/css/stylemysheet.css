@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     width: 500px;
+    
 }
 .info{
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);
@@ -20,8 +21,10 @@
     font-weight: 600;
     cursor: pointer;
     margin: 20px 0;
-    background: #581b98;
-    color: #ffffff;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 15%);
+    background: #96be33;
+
+    
 }
 .reload button{
     padding: 10px;
@@ -32,18 +35,20 @@
     font-weight: 600;
     cursor: pointer;
     margin: 20px 0;
-    color: #581b98;
+    color: #96be33;
+    background: black;
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
 }
 .fetchLocation button i,
 .reload button i {
     margin: 5px;
+
 }
 .info p{
     font-size: 30px;
     margin: 20px 0;
     font-weight: bolder;
-    color: #581b98;
+    color: #96be33;
 }
 li {
     display: block;
