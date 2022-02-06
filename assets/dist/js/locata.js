@@ -26,14 +26,14 @@ await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${lat}+${long}&key=6
         <li><span>Country Code:</span> ${locationDetails.country_code}</li>
         <li><span>Place:</span> ${locationDetails._category}</li>
         <li><span>Type:</span> ${locationDetails._type}</li>
-        <li><span>See Ur House Number:</span> ${locationDetails.house_number}</li>
-        <li><span>See Dey Road Wey Dey:</span> ${locationDetails.road}</li>
-        <li><span>See Ur City:</span> ${locationDetails.city}</li>
-        <li><span>See Ur State:</span> ${locationDetails.state}</li>
-        <li><span>See Ur State Code:</span> ${locationDetails.state_code}</li>
-        <li><span> See Ur District:</span> ${locationDetails.state_district}</li>
-        <li><span> See Ur Local Government:</span> ${locationDetails.county}</li>
-        <li><span>See Ur Village:</span> ${locationDetails.village}</li>
+        <li><span>House Number:</span> ${locationDetails.house_number}</li>
+        <li><span>Road:</span> ${locationDetails.road}</li>
+        <li><span>City:</span> ${locationDetails.city}</li>
+        <li><span>State:</span> ${locationDetails.state}</li>
+        <li><span>State Code:</span> ${locationDetails.state_code}</li>
+        <li><span>District:</span> ${locationDetails.state_district}</li>
+        <li><span>Local Government:</span> ${locationDetails.county}</li>
+        <li><span>Village:</span> ${locationDetails.village}</li>
         <li><span>See Wetin U Fit Send Letter (Postal Code):</span> ${locationDetails.postcode}</li>
     </ul>
     <p>Na Here I Dey Now</p>
