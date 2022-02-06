@@ -3,11 +3,11 @@ const info = document.querySelector(".info")
 
 function getLocation(){
     if (window.navigator.geolocation){
-        button.innerHTML = 'Allow LocateMe To Detect Your Location <i class="fa fa-warning"></i>';
+        button.innerHTML = 'Make Locateme Know Where U Dey <i class="fa fa-warning"></i>';
         button.style.background = "#212529";
         button.style.color = "#ffffff";
         navigator.geolocation.getCurrentPosition(async function (position){
-            button.innerHTML = `Detecting Where You Are Right Now... <i class="fa fa-search-plus"></i>`;
+            button.innerHTML = `I dey try check where u dey, abeg wait... <i class="fa fa-search-plus"></i>`;
             button.style.background = "yellow"
              button.style.color = "#000000";
             let lat = position.coords.latitude;
@@ -19,40 +19,40 @@ await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${lat}+${long}&key=6
     let locationDetails = data.results[0].components;
     info.innerHTML =`
     <div>
-    <p>Your Live Location is</p>
+    <p>See Dey Place I Dey Now Now For Online</p>
     <ul>
         <li><span>Continent:</span> ${locationDetails.continent}</li>
         <li><span>Country:</span> ${locationDetails.country}</li>
         <li><span>Country Code:</span> ${locationDetails.country_code}</li>
         <li><span>Place:</span> ${locationDetails._category}</li>
         <li><span>Type:</span> ${locationDetails._type}</li>
-        <li><span>House Number:</span> ${locationDetails.house_number}</li>
-        <li><span>Road:</span> ${locationDetails.road}</li>
-        <li><span>City:</span> ${locationDetails.city}</li>
-        <li><span>State:</span> ${locationDetails.state}</li>
-        <li><span>State Code:</span> ${locationDetails.state_code}</li>
-        <li><span>District:</span> ${locationDetails.state_district}</li>
-        <li><span>Local Government:</span> ${locationDetails.county}</li>
-        <li><span>Village:</span> ${locationDetails.village}</li>
-        <li><span>Postal Code:</span> ${locationDetails.postcode}</li>
+        <li><span>See Ur House Number:</span> ${locationDetails.house_number}</li>
+        <li><span>See Dey Road Wey Dey:</span> ${locationDetails.road}</li>
+        <li><span>See Ur City:</span> ${locationDetails.city}</li>
+        <li><span>See Ur State:</span> ${locationDetails.state}</li>
+        <li><span>See Ur State Code:</span> ${locationDetails.state_code}</li>
+        <li><span> See Ur District:</span> ${locationDetails.state_district}</li>
+        <li><span> See Ur Local Government:</span> ${locationDetails.county}</li>
+        <li><span>See Ur Village:</span> ${locationDetails.village}</li>
+        <li><span>See Wetin U Fit Send Letter (Postal Code):</span> ${locationDetails.postcode}</li>
     </ul>
-    <p>This Is Where You Are</p>
+    <p>Na Here I Dey Now</p>
     </div>`;
     info.style.visibility = "unset"
     button.style.color = "#ffffff";
     button.style.background = "#212529"
-    button.innerHTML =`Get Location Again <i class="fa fa-refresh"></i>`;
+    button.innerHTML =`See Where I Dey Again <i class="fa fa-refresh"></i>`;
 }).catch(()=>{
-    button.innerHTML = '<p> Something Went Wrong</p>'
+    button.innerHTML = '<p> E get wetin no correct, abeg check weda na ur Data dey ON</p>'
     });
 },
  function (error){
      if(error.code == 1){
-         button.innerText = "User Has Blocked The Permission";
+         button.innerText = "Dey User No Allow Me Make I See Where U Dey";
      }else if (error.code == 2){
-         button.innerText = "Position Not Found"
+         button.innerText = "I No See This Place Where U Dey"
      }else if(error.code == 3){
-         button.innerText = "TimeOut No Result Found"
+         button.innerText = "Time Don Pass I No Fit Give U Result"
              }
         })
     }
