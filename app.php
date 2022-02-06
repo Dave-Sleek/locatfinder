@@ -20,7 +20,7 @@
 </head>
 <body>
 <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
-  <p class="h5 my-0 me-md-auto fw-normal"><a class="navbar-brand" href="index.php" style="color: white;"><img src="assets/img/lm2.png" alt="logo"></a></p>
+  <p class="h5 my-0 me-md-auto fw-normal"><a class="navbar-brand" href="index.php" style="color: white;"><img src="assets/img/LM2.png" alt="logo"></a></p>
   <nav class="my-2 my-md-0 me-md-3">
 
  
