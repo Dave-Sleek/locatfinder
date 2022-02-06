@@ -23,15 +23,16 @@ await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${lat}+${long}&key=6
     <ul>
         <li><span>Continent:</span> ${locationDetails.continent}</li>
         <li><span>Country:</span> ${locationDetails.country}</li>
+        <li><span>Country Code:</span> ${locationDetails.country_code}</li>
         <li><span>Category:</span> ${locationDetails._category}</li>
         <li><span>Type:</span> ${locationDetails._type}</li>
         <li><span>House Number:</span> ${locationDetails.house_number}</li>
         <li><span>Road:</span> ${locationDetails.road}</li>
         <li><span>City:</span> ${locationDetails.city}</li>
         <li><span>State:</span> ${locationDetails.state}</li>
-        <li><span>Local Government:</span> ${locationDetails.county}</li>
-        <li><span>District:</span> ${locationDetails.state_district}</li>
         <li><span>State Code:</span> ${locationDetails.state_code}</li>
+        <li><span>District:</span> ${locationDetails.state_district}</li>
+        <li><span>Local Government:</span> ${locationDetails.county}</li>
         <li><span>Postal Code:</span> ${locationDetails.postcode}</li>
     </ul>
     <p>This Is Where You Are</p>
