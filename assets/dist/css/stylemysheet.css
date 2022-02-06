@@ -1,10 +1,13 @@
+body{
+    background-repeat: no-repeat;
+    align-items: right;
+    justify-content: center;
+}
 .wrapper{
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    width: 500px;
-    
 }
 .info{
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);
