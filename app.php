@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets/img/logo.png"/>
+  <link rel="icon" href="assets/dist/icons/favicon.png"/>
   
   <title>Locate Me</title>
   <!-- CSS BOOTSTRAP -->
@@ -19,7 +20,7 @@
 </head>
 <body>
 <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
-  <p class="h5 my-0 me-md-auto fw-normal"><a class="navbar-brand" href="index.php" style="color: white;"><img src="assets/img/LM2.png" alt="logo"></a></p>
+  <p class="h5 my-0 me-md-auto fw-normal"><a class="navbar-brand" href="index.php" style="color: white;"><img src="assets/img/lm2.png" alt="logo"></a></p>
   <nav class="my-2 my-md-0 me-md-3">
 
  
@@ -43,8 +44,8 @@
 <div class="wrapper">
     <div class="info"></div>
     <div class="fetchLocation">
-        <button class="btn btn-block" onclick="getLocation()">
-        <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+        <button class="btn btn-block" onclick="getLocation()">Get Your Current Location
+        <i class="fa fa-thumb-tack" aria-hidden="false"></i>
 </button>
 </div>
 <div class="reload">
