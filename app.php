@@ -47,20 +47,10 @@ function capture () {
     a.click();
   });  
 }
-const button = document.getElementById('waButton');
-let image = document.getElementById('image');
-let imageURL = image.src;
-
-//let sharehref = `whatsapp://send?text=${encodeURIComponent(imageSrc)}`;
-
-button.setAttribute('href', 'whatsapp://send?text='+encodeURIComponent(imageURL));
 </script>
 <br><br>
 <img src="assets/img/locata.png" height="350" width="350" class="img-fluid mx-auto d-block" alt="Image coming soon">
 <br><br>
-<br>
-<a id="waButton" onclick="capture()" class="btn btn-success" href="whatsapp://send?text='+encodeURIComponent(imageURL)">share image with whatsapp</a>
-<br>
 <center><input type="button" class="btn btn-block" style="background-color:#212529; color:#96be33; font-type:Bold;" value="Capture Location" onclick="capture()"/></center>
 <div class="wrapper">
     <div class="info"></div>
