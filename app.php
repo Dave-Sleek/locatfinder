@@ -51,6 +51,8 @@ function capture () {
 <br><br>
 <img src="assets/img/locata.png" height="350" width="350" class="img-fluid mx-auto d-block" alt="Image coming soon">
 <br><br>
+<br>
+<br>
 <center><input type="button" class="btn btn-block" style="background-color:#212529; color:#96be33; font-type:Bold;" value="Capture Location" onclick="capture()"/></center>
 <div class="wrapper">
     <div class="info"></div>
@@ -67,6 +69,6 @@ function capture () {
 </div>
 </div>
 <script type="text/javascript" src="assets/dist/js/locata.js"></script>
-<?php include('footer.php'); ?>
+<?php include('./footer.php'); ?>
 </body>
 </html>
