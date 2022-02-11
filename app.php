@@ -54,7 +54,8 @@ function capture () {
 <br>
 <br>
 <center><input type="button" class="btn btn-block" style="background-color:#212529; color:#96be33; font-type:Bold;" value="Capture Location" onclick="capture()"/></center>
-<div class="wrapper">
+<br/>
+  <div class="wrapper">
     <div class="info"></div>
 </button>
     <div class="fetchLocation">
