@@ -53,7 +53,7 @@ function capture () {
 <br><br>
 <br>
 <br>
-<center><input type="button" class="btn btn-block" style="background-color:#212529; color:#96be33; font-type:Bold;" value="Capture Location" onclick="capture()"/></center>
+<center><input type="button" class="btn btn-block" style="background-color:#212529; color:#96be33; font-type:Bold;" value="Capture dis place I dey now" onclick="capture()"/></center>
 <br/>
   <div class="wrapper">
     <div class="info"></div>
