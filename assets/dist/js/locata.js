@@ -43,7 +43,7 @@ await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${lat}+${long}&key=6
     button.style.background = "#212529"
     button.innerHTML =`See Where I Dey Again <i class="fa fa-refresh"></i>`;
 }).catch(()=>{
-    button.innerHTML = '<p> E get wetin no correct, abeg check weda na ur Data dey ON</p>'
+    button.innerHTML = '<p> E get wetin no correct, abeg check weda ur Data dey ON</p>'
     });
 },
  function (error){
