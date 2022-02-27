@@ -17,6 +17,9 @@
 <link rel="stylesheet" type="text/css" href="assets/dist/css/font-awesome-animation.css">
 <script type="text/javascript" src="assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.4/html2canvas.min.js"></script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=6963e4d99b1f4a62bc3d927ba8ad2d83&callback=initMap">
+</script>
 </head>
 <body>
 <header class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
@@ -53,9 +56,10 @@ function capture () {
 <br><br>
 <br>
 <br>
-<center><input type="button" class="btn btn-block" style="background-color:#212529; color:#96be33; font-type:Bold;" value="Capture dis place I dey now" onclick="capture()"/></center>
-<br/>
-  <div class="wrapper">
+<center>
+  <input type="button" class="btn btn-block" style="background-color:#212529; color:#96be33; font-type:Bold;" value="Capture Dis Place i Dey Now" onclick="capture()"/></center>
+<br>
+<div class="wrapper">
     <div class="info"></div>
 </button>
     <div class="fetchLocation">
@@ -69,6 +73,13 @@ function capture () {
 </button>
 </div>
 </div>
+<br />
+<div class="mapouter"><div class="gmap_canvas"><iframe width="425" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Ediba&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:425px;}</style><a href="https://www.embedgooglemap.net">build custom google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+<br />
+<center><div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=world&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">build custom google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:425px;}</style></div></div></center>
+<br />
+<center><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=3.4222412109375004%2C7.476857400769465%2C9.552612304687502%2C10.876464994816295&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/>
+<small><a href="https://www.openstreetmap.org/#map=8/9.181/6.487">View Larger Map</a></small></center>
 <script type="text/javascript" src="assets/dist/js/locata.js"></script>
 <?php include('./footer.php'); ?>
 </body>
